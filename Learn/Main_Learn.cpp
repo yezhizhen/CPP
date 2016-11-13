@@ -33,7 +33,7 @@ void struct_main()
 int main(int argc, char* argv[])
 {
 	using std::string;
-	if ("" == string(argv[1]))
+	if (argc==1)
 	{
 		std::cout << "Normal mode\n";
 
@@ -105,7 +105,6 @@ int main(int argc, char* argv[])
 		cin.clear();
 		cin.ignore(4141,'\n');
 		char strBuf[11];
-		char ch;
 
 		
 		// Read up to 10 characters
