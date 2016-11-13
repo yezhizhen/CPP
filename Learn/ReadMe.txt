@@ -21,7 +21,7 @@ Learn.vcxproj.filters
     similar extensions under a specific node (for e.g. ".cpp" files are associated with the
     "Source Files" filter).
 
-Learn.cpp
+Main_Learn.cpp
     This is the main application source file.
 
 /////////////////////////////////////////////////////////////////////////////
@@ -38,3 +38,16 @@ AppWizard uses "TODO:" comments to indicate parts of the source code you
 should add to or customize.
 
 /////////////////////////////////////////////////////////////////////////////
+Usage:
+
+./filename [-o1] [-o2]
+
+-o1:
+	"io"
+	"file_io"
+	"template"
+
+-o1="io" -o2: 
+	        "out"
+	        "in"
+	        "io"

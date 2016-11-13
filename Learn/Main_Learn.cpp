@@ -102,6 +102,7 @@ int main(int argc, char* argv[])
 		char buf[10];
 		cin >> setw(10) >> buf;
 		cout << buf << NEWSESSION;
+		cin.clear();
 		cin.ignore(4141,'\n');
 		char strBuf[11];
 		char ch;
@@ -129,7 +130,11 @@ int main(int argc, char* argv[])
 	}
 	else if ("file_io" == string(argv[1]))
 	{
-		file_main();
+		file_main(argv[2]);
+	}
+	else if ("template" == string(argv[1]))
+	{
+		template_main();
 	}
 
 }

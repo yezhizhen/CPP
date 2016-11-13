@@ -162,6 +162,7 @@
     <ClCompile Include="myContainer.cpp" />
     <ClCompile Include="mystring.cpp" />
     <ClCompile Include="myStruct.cpp" />
+    <ClCompile Include="myTemplate.cpp" />
     <ClCompile Include="pointers.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

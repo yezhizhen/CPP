@@ -17,6 +17,7 @@ public:
 	// subtract Cents - Cents using a friend function
 	friend Cents operator-(const Cents &c1, const Cents &c2);
 
+	//member function overload
 	void operator=(const int &value);
 
 	int getCents() const { return m_cents; }

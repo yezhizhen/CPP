@@ -77,5 +77,8 @@
     <ClCompile Include="file_io.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="myTemplate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
