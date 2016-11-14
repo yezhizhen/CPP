@@ -36,6 +36,9 @@
     <ClInclude Include="myStruct.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="myarray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -78,6 +81,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="myTemplate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="myarray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="templates_holder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

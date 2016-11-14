@@ -1,5 +1,7 @@
 #include "stdafx.h"
-
+#include <array>
+#include <cassert>
+#include "myarray.h"
 template <typename T1, typename T2>
 T2 max(T1 x, T2 y)
 {
@@ -16,6 +18,10 @@ double average(T *myarray, int nums)
 	return tSum;
 
 }
+
+
+
+
 
 class Cents
 {
@@ -52,15 +58,32 @@ void template_main()
 	int a2[5]{ 3,8,5 };
 
 
-
 	cout << average(a1, sizeof(a1)/sizeof(a1[0])) << endl;
 
 	cout << average(a2, sizeof(a2) / sizeof(a2[0])) << endl << NEWSESSION;
 
 	Cents c1[5]{ Cents{3},  Cents{ 3 }, Cents{ 3 }, Cents{ 3 }, Cents{ 6} };
 
-	cout << average(c1, 5) << endl;
+	cout << average(c1, 5) << endl << NEWSESSION;
+
+	Array<int,12> anArray;
+	Array<double,12> adArray;
+
+	for (int nCount = 0; nCount < anArray.GetLength(); nCount++)
+	{
+		anArray[nCount] = nCount;
+		adArray[nCount] = nCount + 0.5;
+	}
+
+	for (int nCount = anArray.GetLength() - 1; nCount >= 0; nCount--)
+		std::cout << anArray[nCount] << "\t" << adArray[nCount] << std::endl;
+	
+	anArray.print();
+	adArray.print();
+
 
 }
+
+
 
 

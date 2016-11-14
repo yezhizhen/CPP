@@ -147,6 +147,7 @@
   <ItemGroup>
     <ClInclude Include="general_inclusion.h" />
     <ClInclude Include="global_main.h" />
+    <ClInclude Include="myarray.h" />
     <ClInclude Include="myStruct.h" />
     <ClInclude Include="namespace.h" />
     <ClInclude Include="stdafx.h" />
@@ -159,10 +160,14 @@
     <ClCompile Include="global.cpp" />
     <ClCompile Include="global_main.cpp" />
     <ClCompile Include="Main_Learn.cpp" />
+    <ClCompile Include="myarray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="myContainer.cpp" />
     <ClCompile Include="mystring.cpp" />
     <ClCompile Include="myStruct.cpp" />
     <ClCompile Include="myTemplate.cpp" />
+    <ClCompile Include="templates_holder.cpp" />
     <ClCompile Include="pointers.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
